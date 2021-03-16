@@ -11,7 +11,7 @@ val AkkaVersion = "2.5.32"
 val IOSprayVersion = "1.3.4"
 val NetLiftWebVersion = "3.4.3"
 val SlickVersion = "3.3.3"
-val MySQLVersion = "8.0.23"
+val MySQLVersion = "6.0.6"
 val LogBackVersion= "1.2.3"
 
 resolvers ++= Seq(
@@ -25,6 +25,7 @@ libraryDependencies ++= Seq(
   "io.spray" %% "spray-routing" % IOSprayVersion,
   "net.liftweb" %% "lift-json" % NetLiftWebVersion,
   "com.typesafe.slick" %% "slick" % SlickVersion,
+  "com.typesafe.slick" %% "slick-hikaricp" % SlickVersion,
   "mysql" % "mysql-connector-java" % MySQLVersion,
   "com.typesafe.akka" %% "akka-actor" % AkkaVersion,
   "com.typesafe.akka" %% "akka-slf4j" % AkkaVersion,
